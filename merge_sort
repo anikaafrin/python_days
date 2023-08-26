@@ -1,4 +1,6 @@
 def pivot_place(list1, first, last):
+    rindex = random.randint(first, last)
+    list1[rindex], list1[last] = list1[last], list1[rindex]
     pivot = list1[first]
     left=first+1
     right= last
