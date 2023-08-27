@@ -1,0 +1,13 @@
+def insertionsort(list1):
+    for i in range(len(1, len(list1))):
+        curr_val=list1[i]
+        position=i
+        while curr_val<list1[position-1] and position>0:
+            list1[position] = list1[position-1]
+            position=position-1 
+        list1[position]=curr_val
+
+        
+list1=[23, 34, 56,12, 2 , 24, 5]
+insertionsort(list1)
+print(list1)
