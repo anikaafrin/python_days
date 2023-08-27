@@ -1,0 +1,23 @@
+def binarysearch(list1, key):
+    low=0
+    high=len(list1)-1
+    found=False
+    mid = (low+high)//2
+    while low<=high and not found:
+        if key==list1[mid]:
+            found=True
+        elif key>list1[mid]:
+            low=mid+1 
+        else:
+            high = mid-1
+    if found == True:
+        print("key is found")
+    else:
+        print("key is not found")
+    
+
+        
+list1=[5, 76, 9, 115 , 55,6,77]
+list1.sort()
+key=5 
+binarysearch(list1,key)
