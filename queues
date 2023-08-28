@@ -1,0 +1,99 @@
+Q=[]
+f=None
+r=None
+def is_empty():
+    if (Q==[]):
+        return True
+    else:
+        return False 
+def enqueue(Que, item):
+    Que.append(item)
+    if(len(Que)==1):
+        f=r=0 
+    else:
+        r=len(Que)-1 
+        
+        
+def dequeue(Que):
+    if (is_empty()):
+        return('UnderFlow!')
+    else:
+        i=Que.pop(0) 
+    if (len(Que)==0):
+        f=r=None
+
+
+def peek():
+    if(is_empty(Que)):
+        return('UnderFlow!') 
+    else: 
+        f=0
+        
+    return Que[f] 
+
+
+def display(Que):
+    if (len(Que)==0):
+        print("q is empty")
+    elif (len(Que)==1):
+        print(Que[0],"<--Front <--Rear")
+    else:
+        f=0 
+        r=len(Que)-1
+        print(Que[f],"<-- front")
+        for x in range(1, r):
+            print(Que[x]) 
+        print(Que[r],"<==Rear") 
+        
+while True:
+    print("queue implementation")
+    print("1. enqueue")    
+    print("2. dequeue")     
+    print("3. peek")   
+    print("4. display")     
+    print("5. exit")     
+    ch=int(input('enter choice 1-5'))
+    if ch==1:
+        item =int(input("enter ele")) 
+        enqueue(Q,item)
+    elif ch==2:
+        item = dequeue(Q) 
+        if item == 'UnderFlow!':
+            print('queue is empty') 
+        else: 
+            print('%d is dequeued!'%item) 
+    elif ch==3:
+        item = peek(Q)
+        if item == 'UnderFlow!':
+            print('queue is empty') 
+        else: 
+            print('front is %d'%item)
+    elif ch==4:
+        display(Q) 
+        
+    elif ch==5:
+        break
+    else:
+        print('kana')
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     
+     
+     
+     
+     
+     
+     
+     
+        
+        
+        
+        
