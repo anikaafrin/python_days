@@ -1,0 +1,10 @@
+hashmap={} 
+hashmap["anika"] = "20" 
+hashmap["lang"] = "python" 
+hashmap["work"] = "2" 
+hashmap["lang_known"] = ["python", "java", "c++"] 
+print(hashmap)
+print(hashmap["lang_known"]) 
+print(hashmap)
+hashmap.pop("lang")
+print(hashmap) 
