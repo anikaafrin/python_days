@@ -1,0 +1,18 @@
+def printx(string, k):
+    hashmap={}
+    for char in string:
+        print(char)
+        if char  in hashmap:
+            hashmap[char] += 1 
+        else:
+            hashmap[char] = 1
+    chars=[] 
+    for char in hashmap:
+        if hashmap[char] == k:
+            chars.append(char)
+    return chars 
+        
+
+s="abcda"
+k=2
+print(printx(s, 2))
